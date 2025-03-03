@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"uri": "vscode-vfs://github/4eckd/xs-web"
+		}
+	],
+	"settings": {
+		"github-actions.workflows.pinned.workflows": [
+			"dynamic/pages/pages-build-deployment"
+		]
+	}
+}

@@ -4,6 +4,7 @@
 <head>
   <title>StakeReloadXS - Xtremely Simple Reloads</title> 
   <meta name="ccpayment-site-verification" content="0139266877771d61f301725cd29cdb86"/> 
+  <meta author="https://github.com/jlucus">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
@@ -22,83 +23,37 @@
     }
   </style>
 </head>
+<body class="bg-black text-gray-100 text-[15px]">
+  <nav class="fixed top-0 left-0 w-full py-4 px-4 sm:px-10 z-50 min-h-[20px] bg-black bg-opacity-5 text-white">
+    <div class="flex items-center justify-between">
+      <!-- Logo Section -->
+      <a href="/index.html">
+        <img src="/src/images/og-image.png" alt="Logo" class="w-40" />
+      </a>
+        <!-- Mobile Menu Toggle Button -->
+    <button id="toggleOpen" class="lg:hidden">
+      <svg class="w-7 h-7" fill="#fff" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+      </svg>
+    </button>
+    <!-- Navigation Links -->
+    <ul class="hidden lg:flex gap-x-10">
+      <li><a href="/index.html" class="hover:text-red-600">Home</a></li>
+      <li><a href="/src/pages/team.html" class="hover:text-red-600">Team</a></li>
+      <li><a href="/src/pages/shop.html" class="hover:text-red-600">Shop</a></li>
+      <li><a href="/src/pages/offers.html" class="hover:text-red-600">Signup Offers</a></li>
+      <li><a href="/src/pages/help.html" class="hover:text-red-600">Help Center</a></li>
+    </ul>
+    <!-- Search Bar -->
+    <div class="hidden lg:flex items-center bg-transparent px-6 py-2.5 rounded border border-white">
+      <input type="text" placeholder="Search something..." class="bg-transparent w-full outline-none" />
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192.904 192.904" width="16px" class="cursor-pointer fill-gray-400">
+        <path d="m190.707 180.101-47.078-47.077c11.702-14.072 18.752-32.142 18.752-51.831C162.381 36.423 125.959 0 81.191 0 36.422 0 0 36.423 0 81.193c0 44.767 36.422 81.187 81.191 81.187 19.688 0 37.759-7.049 51.831-18.751l47.079 47.078a7.474 7.474 0 0 0 5.303 2.197 7.498 7.498 0 0 0 5.303-12.803zM15 81.193C15 44.694 44.693 15 81.191 15c36.497 0 66.189 29.694 66.189 66.193 0 36.496-29.692 66.187-66.189 66.187C44.693 147.38 15 117.689 15 81.193z"></path>
+      </svg>
+    </div>
+  </nav>
+  <div class="relative w-full h-screen flex items-center justify-center before:absolute before:inset-0 before:w-full before:h-full before:bg-black before:opacity-60" style="background-image: url('src/images/page-logo.svg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
 
-<body class="max-w-[1920px] mx-auto">
-    <script defer="defer" type="text/javascript" src="http://78.128.127.152:8069/im_livechat/assets_embed.js"></script>
-  <div class="bg-black text-gray-100 text-[15px]">
-
-    <div
-      class="relative lg:min-h-screen 2xl:min-h-[730px] before:absolute before:inset-0 before:w-full before:bg-black before:opacity-60"
-      style="background-image: url(https://readymadeui.com/dark-bg-image.webp); background-size: cover; background-repeat: no-repeat">
-
-      <header class='py-4 px-4 sm:px-10 z-50 min-h-[70px] relative'>
-        <div class='lg:flex lg:items-center gap-x-2 relative'>
-          <div class="flex items-center shrink-0">
-            <a href="javascript:void(0)"><img src="/images/og-image.png" alt=""
-                class='w-40' />
-            </a>
-            <button id="toggleOpen" class='lg:hidden ml-auto'>
-              <svg class="w-7 h-7" fill="#fff" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd"
-                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                  clip-rule="evenodd"></path>
-              </svg>
-            </button>
-          </div>
-
-          <div id="collapseMenu"
-            class="lg:ml-14 max-lg:hidden lg:!block w-full max-lg:fixed max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-50 max-lg:before:inset-0 max-lg:before:z-50 z-50">
-            <button id="toggleClose" class='lg:hidden fixed top-2 right-4 z-[100] rounded-full bg-white p-3'>
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 fill-black" viewBox="0 0 320.591 320.591">
-                <path
-                  d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z"
-                  data-original="#000000"></path>
-                <path
-                  d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z"
-                  data-original="#000000"></path>
-              </svg>
-            </button>
-
-            <div
-              class='lg:flex items-center w-full gap-6 max-lg:fixed max-lg:bg-black max-lg:w-1/2 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50'>
-              <ul class='lg:flex gap-x-6 max-lg:space-y-3'>
-                <li class='mb-6 hidden max-lg:block'>
-                  <a href="javascript:void(0)"><img src="/images/og-image.png" alt="logo"
-                      class='w-36' />
-                  </a>
-                </li>
-                <li class='max-lg:border-b max-lg:py-3 px-3'>
-                  <a href='javascript:void(0)' class='hover:text-red-600 text-red-600 block transition-all'>Home</a>
-                </li>
-                <li class='max-lg:border-b max-lg:py-3 px-3'><a href='javascript:void(0)'
-                    class='hover:text-red-600 block transition-all'>Team</a>
-                </li>
-                <li class='max-lg:border-b max-lg:py-3 px-3'><a href='javascript:void(0)'
-                    class='hover:text-red-600 block transition-all'>Shop</a>
-                </li>
-                <li class='max-lg:border-b max-lg:py-3 px-3'><a href='javascript:void(0)'
-                    class='hover:text-red-600 block transition-all'>Signup Offers</a>
-                </li>
-                <li class='max-lg:border-b max-lg:py-3 px-3'><a href='javascript:void(0)'
-                    class='hover:text-red-600 block transition-all'>Help Center</a>
-                </li>
-              </ul>
-
-              <div
-                class='flex xl:w-80 max-xl:w-full bg-transparent px-6 py-2.5 rounded border border-white lg:ml-auto  max-lg:mt-10'>
-                <input type='text' placeholder='Search something...'
-                  class='w-full bg-transparent rounded outline-none' />
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192.904 192.904" width="16px"
-                  class="cursor-pointer fill-gray-400">
-                  <path
-                    d="m190.707 180.101-47.078-47.077c11.702-14.072 18.752-32.142 18.752-51.831C162.381 36.423 125.959 0 81.191 0 36.422 0 0 36.423 0 81.193c0 44.767 36.422 81.187 81.191 81.187 19.688 0 37.759-7.049 51.831-18.751l47.079 47.078a7.474 7.474 0 0 0 5.303 2.197 7.498 7.498 0 0 0 5.303-12.803zM15 81.193C15 44.694 44.693 15 81.191 15c36.497 0 66.189 29.694 66.189 66.193 0 36.496-29.692 66.187-66.189 66.187C44.693 147.38 15 117.689 15 81.193z">
-                  </path>
-                </svg>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
 
       <div class="max-w-5xl mx-auto text-center relative px-4 sm:px-10 mt-16">
         <h1 class="lg:text-7xl md:text-6xl text-4xl font-semibold mb-6 md:!leading-[80px]">Xtremely Simple Reloads
@@ -119,10 +74,12 @@
           </div>
         </div>
         <div class="mt-14 flex gap-x-8 gap-y-4 justify-center max-sm:flex-col">
-          <button type='button'
-            class="px-6 py-3.5 rounded-md text-gray-100 bg-red-700 hover:bg-red-800 transition-all">Try it Free</button>
-          <button type='button'
-            class="bg-transparent hover:bg-red-600 border border-red-600 px-6 py-3.5 rounded-md text-gray-100 transition-all">Purchase XSID</button>
+          <button type="button" class="px-6 py-3.5 rounded-md text-gray-100 bg-red-700 hover:bg-red-800 transition-all mt-10">
+            <a href="https://github.com/stakereload/xs">Try It Free!</a>
+          </button>
+          <button type="button" class="px-6 py-3.5 rounded-md text-gray-100 bg-red-700 hover:bg-red-800 transition-all mt-10">
+            <a href="src/pages/shop.html">Top Up</a>
+          </button>
         </div>
       </div>
     </div>
@@ -145,7 +102,7 @@
             </svg>
             <h3 class="text-xl mb-4">Private Servers</h3>
             <p class="text-gray-400">Have bigger requirements? We work with many big clients who require specialist set up. Contact us for more info.</p>
-            <a href="javascript:void(0);" class="text-red-600 inline-block mt-4 hover:underline">Learn more</a>
+            <a href="https://t.me/supitsj" class="text-red-600 inline-block mt-4 hover:underline">Learn more</a>
           </div>
           <div class="text-center bg-[#111] px-6 py-8 rounded-2xl">
             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
@@ -164,8 +121,9 @@
               </g>
             </svg>
             <h3 class="text-xl mb-4">Automatic CLaims</h3>
-            <p class="text-gray-400">We make your bonus lifecycle as simple and painless as possible.</p>
-            <a href="javascript:void(0);" class="text-red-600 inline-block mt-4 hover:underline">Learn more</a>
+            <p class="text-gray-400">We make your bonus lifecycle as simple
+              and painless as possible.</p>
+            <a href="https://t.me/supitsj" class="text-red-600 inline-block mt-4 hover:underline">Learn more</a>
           </div>
           <div class="text-center bg-[#111] px-6 py-8 rounded-2xl">
             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
@@ -177,7 +135,7 @@
             <h3 class="text-xl mb-4">24/7 Customer Support</h3>
             <p class="text-gray-400">Get prompt and reliable assistance with our 24/7 customer support for all your
               inquiries and concerns.</p>
-            <a href="javascript:void(0);" class="text-red-600 inline-block mt-4 hover:underline">Learn more</a>
+            <a href="https://t.me/supitsj" class="text-red-600 inline-block mt-4 hover:underline">Learn more</a>
           </div>
         </div>
       </div>
@@ -202,10 +160,9 @@
               <p class="text-gray-400">Level 2 = $75</p>
               <p class="text-gray-400">Level 3 = $500</p>
               <p class="text-gray-400">Level 4 = $1,000</p>
-              <button type="button"
-              class="px-6 py-3.5 rounded-md text-gray-100 bg-red-700 hover:bg-red-800 transition-all mt-10">
-              Guanteed KYC
-            </button>
+              <button type="button" class="px-6 py-3.5 rounded-md text-gray-100 bg-red-700 hover:bg-red-800 transition-all mt-10">
+                <a href="https://t.me/supitsj">KYC Help</a>
+              </button>
             </div>
             <div class="text-center bg-[#111] px-6 py-8 rounded-2xl">
               <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
@@ -223,12 +180,11 @@
                   <path d="M178 271.894 233.894 216 334 316.105" data-original="#000000" />
                 </g>
               </svg>
-              <h3 class="text-xl mb-4">Guanteed $10,000 Wager</h3>
+              <h3 class="text-xl mb-4">Guaranteed $10,000 Wager</h3>
               <p class="text-gray-400">That's right - Guaranteed $10k wagered. We have over $60,000,000 wagered on Stake alone, and we're in profit</p>
-              <button type="button"
-              class="px-6 py-3.5 rounded-md text-gray-100 bg-red-700 hover:bg-red-800 transition-all mt-10">
-              Guaraneed Wager
-            </button>
+              <button type="button" class="px-6 py-3.5 rounded-md text-gray-100 bg-red-700 hover:bg-red-800 transition-all mt-10">
+                <a href="https://t.me/supitsj">Guanteed</a>
+              </button>
             </div>
             <div class="text-center bg-[#111] px-6 py-8 rounded-2xl">
               <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
@@ -240,9 +196,8 @@
               <h3 class="text-xl mb-4">Affiliates</h3>
               <p class="text-gray-400">Partner with StakeReloadXS and earn from referrals up to %20 of their 
                 deposits.</p>
-                <button type="button"
-                class="px-6 py-3.5 rounded-md text-gray-100 bg-red-700 hover:bg-red-800 transition-all mt-10">
-                Contact Us
+                <button type="button" class="px-6 py-3.5 rounded-md text-gray-100 bg-red-700 hover:bg-red-800 transition-all mt-10">
+                  <a href="https://t.me/supitsj">Contact Us</a>
               </button>
             </div>
           </div>
@@ -292,8 +247,8 @@
                 </li>
               </ul>
             </div>
-            <button type="button"
-              class="w-full px-6 py-3.5 rounded-md text-gray-100 bg-red-700 hover:bg-red-800 transition-all mt-10">Get
+            <button type="button" data-package-id="new-xsid"
+              class="payment-button w-full px-6 py-3.5 rounded-md text-gray-100 bg-red-700 hover:bg-red-800 transition-all mt-10">Get
               started today</button>
           </div>
 
@@ -316,8 +271,8 @@
                 </li>
               </ul>
             </div>
-            <button type="button"
-              class="w-full px-6 py-3.5 rounded-md text-gray-100 bg-red-700 hover:bg-red-800 transition-all mt-10">Boost Your Deposit</button>
+            <button type="button" data-package-id="xs-credits-50k"
+              class="payment-button w-full px-6 py-3.5 rounded-md text-gray-100 bg-red-700 hover:bg-red-800 transition-all mt-10">Boost Your Deposit</button>
           </div>
           <div class="hover:outline outline-red-600 rounded relative overflow-hidden transition-all p-6">
             <div class="text-left">
@@ -338,8 +293,8 @@
                 </li>
               </ul>
             </div>
-            <button type="button"
-              class="w-full px-6 py-3.5 rounded-md text-gray-100 bg-red-700 hover:bg-red-800 transition-all mt-10">Boost Your Deposit</button>
+            <button type="button" data-package-id="xs-credits-100k"
+              class="payment-button w-full px-6 py-3.5 rounded-md text-gray-100 bg-red-700 hover:bg-red-800 transition-all mt-10">Boost Your Deposit</button>
           </div>
           <div class="hover:outline outline-red-600 rounded relative overflow-hidden transition-all p-6">
             <div class="text-left">
@@ -360,8 +315,8 @@
                 </li>
               </ul>
             </div>
-            <button type="button"
-              class="w-full px-6 py-3.5 rounded-md text-gray-100 bg-red-700 hover:bg-red-800 transition-all mt-10">Boost Your Deposit</button>
+            <button type="button" data-package-id="xs-credits-200k"
+              class="payment-button w-full px-6 py-3.5 rounded-md text-gray-100 bg-red-700 hover:bg-red-800 transition-all mt-10">Boost Your Deposit</button>
           </div>
           <div class="hover:outline outline-red-600 rounded relative overflow-hidden transition-all p-6">
             <div class="text-left">
@@ -382,8 +337,8 @@
                 </li>
               </ul>
             </div>
-            <button type="button"
-              class="w-full px-6 py-3.5 rounded-md text-gray-100 bg-red-700 hover:bg-red-800 transition-all mt-10">Boost Your Deposit</button>
+            <button type="button" data-package-id="xs-credits-1m"
+              class="payment-button w-full px-6 py-3.5 rounded-md text-gray-100 bg-red-700 hover:bg-red-800 transition-all mt-10">Boost Your Deposit</button>
           </div>
         </div>
       </div>
@@ -398,42 +353,49 @@
             <div class="cursor-pointer rounded overflow-hidden group">
               <div>
                 <span class="block text-gray-400 mb-2">5 JAN 2025</span>
-                <h3 class="text-xl group-hover:text-red-600 transition-all">In BTC We Trust: The Elon Musk Effect on a US Backed Stablecoin</h3>
+                
+                <h3 class="text-xl group-hover:text-red-600 transition-all">In BTC We Trust: The Elon Musk Effect on a US Backed Stablecoin
+                  <a href="https://www.linkedin.com/in/supitsj/recent-activity/articles/" class="text-gray-400 hover:text-red-600 transition-all"></a>
+                </h3>
                 <div class="mt-6">
                   <p class="text-gray-400 ">Here's how we can transform the illicit gains of cybercriminals into a foundation for America’s prosperity, leveraging assets now worth billions or even trillions in the span of less than a decade.</p>
                 </div>
               </div>
               <hr class="my-6" />
               <div class="flex flex-wrap items-center gap-3">
-                <img src='/images/supitsj.png' class="w-9 h-9 rounded-full" />
+                <img src='/src/images/supitsj.png' class="w-9 h-9 rounded-full" />
                 <p class="text-xs text-gray-400">BY SupItsJ</p>
               </div>
             </div>
             <div class="cursor-pointer rounded overflow-hidden group">
               <div>
                 <span class="block text-gray-400 mb-2">29 NOV 2024</span>
-                <h3 class="text-xl group-hover:text-red-600 transition-all">The Art of Affiliate Whoring</h3>
+                <h3 class="text-xl group-hover:text-red-600 transition-all">The Art of Affiliate Whoring
+                  <a href="https://www.linkedin.com/in/supitsj/recent-activity/articles/" class="text-gray-400 hover:text-red-600 transition-all"></a>
+                </h3>
                 <div class="mt-6">
                   <p class="text-gray-400 ">Whether you're starting out or at a crossroads where the path forward seems uncertain, I’ll break it down for you in simple terms. Let’s dive into the The Art of Affiliate Whoring 2025 Edition.</p>
                 </div>
               </div>
               <hr class="my-6" />
               <div class="flex flex-wrap items-center gap-3">
-                <img src='images/supitsj.png' class="w-9 h-9 rounded-full" />
+                <img src='src/images/supitsj.png' class="w-9 h-9 rounded-full" />
                 <p class="text-xs text-gray-400">BY SupItsJ</p>
               </div>
             </div>
             <div class="cursor-pointer rounded overflow-hidden group">
               <div>
                 <span class="block text-gray-400 mb-2">4 JUL 2024</span>
-                <h3 class="text-xl group-hover:text-red-600 transition-all">How Telegram & TON Could Revolutionize Advertising Networks in Social Media</h3>
+                <h3 class="text-xl group-hover:text-red-600 transition-all">How Telegram & TON Could Revolutionize Advertising Networks in Social Media
+                  <a href="https://www.linkedin.com/in/supitsj/recent-activity/articles/" class="text-gray-400 hover:text-red-600 transition-all"></a>
+                </h3>
                 <div class="mt-6">
-                  <p class="text-gray-400">Telegram and its associated cryptocurrency, TON (The Open Network), are emerging as powerful disruptors. With a distinct focus on privacy, user engagement, and decentralized technology, these platforms offer innovative opportunities for advertisers and influencers.</p>
+                  <p class="text-gray-400">Telegram and its associated cryptocurrency, TON (The Open Network), are emerging as powerful disruptors.</p>
                 </div>
               </div>
               <hr class="my-6" />
               <div class="flex flex-wrap items-center gap-3">
-                <img src='images/supitsj.png' class="w-9 h-9 rounded-full" />
+                <img src='src/images/supitsj.png' class="w-9 h-9 rounded-full" />
                 <p class="text-xs text-gray-400">BY SupItsJ</p>
               </div>
             </div>
@@ -444,8 +406,7 @@
       <div class="mt-32">
         <div class="mb-16 max-w-2xl text-center mx-auto">
           <h2 class="md:text-4xl text-3xl font-semibold md:!leading-[50px] mb-6">Application Metrics</h2>
-          <p class="text-gray-400">Laboris qui Lorem ad tempor ut reprehenderit. Nostrud anim nulla officia ea sit
-            deserunt. Eu eu quis anim aute Laboris qui Lorem ad tempor ut reprehenderit.</p>
+          <p class="text-gray-400">An overview of how we are serving players.</p>
         </div>
         <div class="grid lg:grid-cols-4 sm:grid-cols-2 gap-12 lg:divide-x lg:divide-gray-300">
           <div class="text-center">
@@ -458,7 +419,7 @@
                 data-original="#000000" />
             </svg>
             <h3 class="text-4xl text-red-600 mt-6">400+</h3>
-            <p class="mt-4">Unique Visitors</p>
+            <p class="mt-4">Weekly Clients Served</p>
           </div>
           <div class="text-center">
             <svg xmlns="http://www.w3.org/2000/svg" class="fill-red-600 w-10 inline-block" viewBox="0 0 512 512">
@@ -466,8 +427,8 @@
                 d="M64.217 333.491h41.421c5.508 0 10 4.492 10 10v97.833c0 5.508-4.492 10-10 10H64.217c-5.508 0-10-4.492-10-10v-97.833c0-5.508 4.492-10 10-10zm155.471-61.737h-41.422c-5.508 0-10 4.492-10 10v159.571c0 5.508 4.492 10 10 10h41.422c5.508 0 10-4.492 10-10V281.754c0-5.508-4.493-10-10-10zm114.049-64.466h-41.421c-5.508 0-10 4.492-10 10v224.036c0 5.508 4.492 10 10 10h41.421c5.508 0 10-4.492 10-10V217.288c-.001-5.507-4.493-10-10-10zm72.625-57.992h41.421c5.508 0 10 4.492 10 10v282.028c0 5.508-4.492 10-10 10h-41.421c-5.508 0-10-4.492-10-10V159.296c0-5.508 4.492-10 10-10zm2.707-106.018a7.98 7.98 0 0 1-.812-15.938l49.121-2.666a7.98 7.98 0 0 1 8.307 9.094l.006.001-7.088 48.68a7.986 7.986 0 0 1-15.812-2.25l3.878-26.632C385.642 108.019 321.72 152.702 257.158 189.5c-69.131 39.402-138.98 69.744-206.779 93.355a7.976 7.976 0 0 1-5.25-15.062c66.943-23.313 135.906-53.269 204.154-92.167 63.527-36.208 126.449-80.188 186.56-133.799zM45.262 481.873h421.477c5.508 0 10 4.492 10 10v3.193c0 5.508-4.492 10-10 10H45.262c-5.508 0-10-4.492-10-10v-3.193c0-5.508 4.492-10 10-10zM139.587 6.935c-48.325 0-87.5 39.175-87.5 87.5s39.175 87.5 87.5 87.5 87.5-39.175 87.5-87.5c-.001-48.325-39.176-87.5-87.5-87.5zm-8 32.13v5.279c-5.474 1.183-10.606 3.537-14.768 6.92-6.626 5.387-10.827 13.21-10.353 22.965.476 9.817 5.372 16.4 12.186 20.849 5.887 3.844 13.093 5.827 19.733 6.917 5.206.855 10.757 2.201 14.95 4.733 3.261 1.969 5.71 4.838 6.23 9.127.072.595.111 1.013.117 1.26.08 3.359-1.536 5.926-3.962 7.767-3.135 2.379-7.564 3.785-12.005 4.324a33.57 33.57 0 0 1-3.172.254c-5.25.126-10.424-1.156-14.458-3.842-3.274-2.18-5.775-5.367-6.818-9.552a7.982 7.982 0 0 0-15.5 3.812c2.094 8.399 7.044 14.749 13.505 19.052 4.252 2.831 9.164 4.736 14.315 5.711v5.165a8 8 0 1 0 16-.001v-5.01c6.309-1.038 12.699-3.388 17.758-7.226 6.302-4.782 10.494-11.632 10.275-20.829a29.17 29.17 0 0 0-.179-2.76c-1.22-10.052-6.653-16.591-13.856-20.94-6.27-3.786-13.768-5.668-20.637-6.796-4.832-.793-9.912-2.13-13.607-4.543-2.767-1.806-4.752-4.416-4.937-8.224-.202-4.157 1.615-7.512 4.478-9.84 2.281-1.854 5.196-3.144 8.362-3.781a22.978 22.978 0 0 1 10.115.244c5.278 1.338 10.083 4.817 12.614 10.845a7.997 7.997 0 0 0 10.469 4.281 7.997 7.997 0 0 0 4.281-10.469c-4.701-11.196-13.65-17.664-23.489-20.158a37.3 37.3 0 0 0-1.646-.377v-5.161a8 8 0 1 0-16.001.004z"
                 clip-rule="evenodd" data-original="#000000" />
             </svg>
-            <h3 class="text-4xl text-red-600 mt-6">450+</h3>
-            <p class="mt-4">Total Sales</p>
+            <h3 class="text-4xl text-red-600 mt-6">$250,000</h3>
+            <p class="mt-4">Weekly Claims</p>
           </div>
           <div class="text-center">
             <svg xmlns="http://www.w3.org/2000/svg" class="fill-red-600 w-10 inline-block" viewBox="0 0 28 28">
@@ -475,7 +436,7 @@
                 d="M18.56 16.94h-3.12l.65-2.16a2.58 2.58 0 0 0-1.66-3.21 1.41 1.41 0 0 0-1.81 1l-.1.42a8.61 8.61 0 0 1-2.26 4l-.57.56a1.56 1.56 0 0 0-1.21-.59h-.73a1.56 1.56 0 0 0-1.56 1.54v6.44a1.56 1.56 0 0 0 1.56 1.56h.73a1.55 1.55 0 0 0 1.33-.76l.14.07a6.55 6.55 0 0 0 2.91.69h3.59a3.58 3.58 0 0 0 3-1.6 6.34 6.34 0 0 0 1.07-3.53v-2.49a1.94 1.94 0 0 0-1.96-1.94zm-9.56 8a.56.56 0 0 1-.56.56h-.69a.56.56 0 0 1-.56-.56V18.5a.56.56 0 0 1 .56-.56h.73a.56.56 0 0 1 .52.56zm10.5-3.57a5.38 5.38 0 0 1-.9 3 2.59 2.59 0 0 1-2.15 1.15h-3.59a5.53 5.53 0 0 1-2.46-.58l-.4-.2V18.6l.92-.92a9.63 9.63 0 0 0 2.53-4.46l.1-.41a.43.43 0 0 1 .2-.26.4.4 0 0 1 .32 0 1.58 1.58 0 0 1 1 2l-.84 2.81a.5.5 0 0 0 .08.44.48.48 0 0 0 .4.2h3.79a.94.94 0 0 1 .94.94zM11 7.3l-.32 1.85a1.09 1.09 0 0 0 .44 1.09 1.11 1.11 0 0 0 .65.22 1.18 1.18 0 0 0 .52-.13L14 9.45l1.67.88a1.1 1.1 0 0 0 1.17-.09 1.09 1.09 0 0 0 .44-1.08L17 7.3 18.31 6a1.1 1.1 0 0 0 .29-1.14 1.12 1.12 0 0 0-.9-.76l-1.87-.27L15 2.12a1.12 1.12 0 0 0-2 0l-.83 1.69-1.87.27a1.12 1.12 0 0 0-.9.76A1.1 1.1 0 0 0 9.69 6zm-.6-2.23 2.13-.31a.49.49 0 0 0 .47-.27l1-1.93a.11.11 0 0 1 .2 0l1 1.93a.49.49 0 0 0 .38.27l2.13.31a.12.12 0 0 1 .09.08.11.11 0 0 1 0 .11l-1.54 1.5a.53.53 0 0 0-.15.45l.37 2.11a.09.09 0 0 1-.05.11.1.1 0 0 1-.12 0l-1.9-1a.47.47 0 0 0-.46 0l-1.91 1a.09.09 0 0 1-.11 0 .09.09 0 0 1-.05-.11l.37-2.11a.53.53 0 0 0-.15-.45l-1.54-1.5a.11.11 0 0 1 0-.11.12.12 0 0 1-.12-.08zm-3.06 8.18a1 1 0 0 0 1-1.19l-.27-1.52 1.12-1.09a1 1 0 0 0-.56-1.73L7.1 7.5l-.69-1.39a1.05 1.05 0 0 0-1.82 0L3.9 7.5l-1.53.22a1 1 0 0 0-.56 1.73l1.11 1.09-.27 1.52a1 1 0 0 0 .41 1 1 1 0 0 0 1.07.07l1.37-.72 1.37.72a1 1 0 0 0 .47.12zm-1.84-1.9a.46.46 0 0 0-.23.06l-1.63.82.36-1.78a.53.53 0 0 0-.2-.45L2.51 8.71l1.8-.26a.47.47 0 0 0 .37-.27l.83-1.63.81 1.63a.47.47 0 0 0 .37.27l1.8.29L7.2 10a.53.53 0 0 0-.15.45l.29 1.8-1.61-.84a.46.46 0 0 0-.23-.06zm20.95-2.94a1 1 0 0 0-.82-.69L24.1 7.5l-.69-1.39a1.05 1.05 0 0 0-1.82 0L20.9 7.5l-1.53.22a1 1 0 0 0-.56 1.73l1.11 1.09-.27 1.52a1 1 0 0 0 .41 1 1 1 0 0 0 1.07.07l1.37-.72 1.37.72a1 1 0 0 0 .47.12 1 1 0 0 0 1-1.19l-.27-1.52 1.11-1.09a1 1 0 0 0 .27-1.04zM24.2 10a.53.53 0 0 0-.15.45l.29 1.8-1.61-.84a.47.47 0 0 0-.46 0l-1.63.82.36-1.78a.53.53 0 0 0-.2-.45l-1.29-1.29 1.8-.26a.47.47 0 0 0 .37-.27l.83-1.63.81 1.63a.47.47 0 0 0 .37.27l1.8.29z"
                 data-name="Layer 2" data-original="#000000" />
             </svg>
-            <h3 class="text-4xl text-red-600 mt-6">500+</h3>
+            <h3 class="text-4xl text-red-600 mt-6">%100</h3>
             <p class="mt-4">Customer Satisfaction</p>
           </div>
           <div class="text-center">
@@ -484,8 +445,8 @@
                 d="M477.797 290.203c0 59.244-23.071 114.942-64.963 156.834S315.244 512 256 512s-114.942-23.071-156.834-64.963-64.963-97.59-64.963-156.834c0-39.621 10.579-78.512 30.595-112.468 19.419-32.944 47.178-60.48 80.276-79.63 7.646-4.427 17.437-1.814 21.861 5.836 4.426 7.648 1.813 17.437-5.836 21.861-53.882 31.175-88.951 87.036-94.189 148.4H84.6c8.837 0 16 7.163 16 16s-7.163 16-16 16H66.884C74.594 398.12 148.083 471.609 240 479.319v-17.717c0-8.837 7.163-16 16-16s16 7.163 16 16v17.717c91.917-7.71 165.406-81.199 173.116-173.116h-17.717c-8.837 0-16-7.163-16-16s7.163-16 16-16h17.69c-5.238-61.364-40.307-117.227-94.19-148.4-7.648-4.425-10.262-14.212-5.836-21.861 4.425-7.648 14.214-10.261 21.861-5.836 33.098 19.148 60.857 46.685 80.277 79.63 20.016 33.955 30.596 72.846 30.596 112.467zm-253.173-220.2 15.259-15.259-.258 71.899c-.031 8.837 7.106 16.025 15.942 16.058h.059c8.81 0 15.967-7.126 15.999-15.942l.259-72.248 15.492 15.492c3.124 3.124 7.219 4.687 11.313 4.687s8.189-1.563 11.313-4.687c6.248-6.248 6.248-16.379 0-22.627L267.313 4.687c-6.248-6.248-16.379-6.248-22.627 0l-42.689 42.689c-6.248 6.248-6.248 16.379 0 22.627s16.379 6.248 22.627 0zM272 174.358v64.628c16.74 5.24 29.977 18.478 35.218 35.217h50.493c8.837 0 16 7.163 16 16s-7.163 16-16 16h-50.493c-6.823 21.795-27.202 37.655-51.218 37.655-29.585 0-53.654-24.069-53.654-53.655 0-24.015 15.86-44.394 37.654-51.217v-64.628c0-8.837 7.163-16 16-16s16 7.163 16 16zm5.655 115.845c0-11.94-9.715-21.654-21.655-21.654s-21.654 9.714-21.654 21.654 9.714 21.655 21.654 21.655 21.655-9.714 21.655-21.655z"
                 data-original="#000000" />
             </svg>
-            <h3 class="text-4xl text-red-600 mt-6">600+</h3>
-            <p class="mt-4">System Uptime (in hours)</p>
+            <h3 class="text-4xl text-red-600 mt-6">3 Years</h3>
+            <p class="mt-4">Serving Players</p>
           </div>
         </div>
       </div>
@@ -575,7 +536,174 @@
 
     toggleOpen.addEventListener('click', handleClick);
     toggleClose.addEventListener('click', handleClick);
+  </script>
 
+  <!-- Payment Modal -->
+  <div id="paymentModal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 hidden">
+    <div class="bg-[#111] p-8 rounded-xl max-w-md w-full mx-4">
+      <div class="flex justify-between items-center mb-6">
+        <h2 class="text-xl font-semibold">Complete Your Purchase</h2>
+        <button id="closeModal" class="text-gray-400 hover:text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      
+      <div id="modalContent">
+        <div class="mb-4">
+          <p class="text-gray-400 mb-2">Please enter your Telegram username to receive payment confirmation:</p>
+          <input type="text" id="telegramUsername" placeholder="@username"
+            class="w-full bg-[#222] border border-gray-700 rounded px-4 py-2 text-white focus:outline-none focus:border-red-600">
+        </div>
+        
+        <div id="packageDetails" class="mb-6 p-4 bg-[#222] rounded">
+          <p class="text-gray-400">Package: <span id="packageName" class="text-white"></span></p>
+          <p class="text-gray-400">Price: <span id="packagePrice" class="text-white"></span></p>
+        </div>
+        
+        <button id="proceedToPayment"
+          class="w-full px-6 py-3.5 rounded-md text-gray-100 bg-red-700 hover:bg-red-800 transition-all">
+          Proceed to Payment
+        </button>
+      </div>
+      
+      <div id="loadingIndicator" class="text-center py-8 hidden">
+        <div class="inline-block animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-red-600"></div>
+        <p class="mt-4 text-gray-400">Processing your request...</p>
+      </div>
+      
+      <div id="errorMessage" class="bg-red-900 bg-opacity-50 text-white p-4 rounded mt-4 hidden"></div>
+    </div>
+  </div>
+
+  <script>
+    // Payment processing
+    document.addEventListener('DOMContentLoaded', function() {
+      const paymentButtons = document.querySelectorAll('.payment-button');
+      const paymentModal = document.getElementById('paymentModal');
+      const closeModal = document.getElementById('closeModal');
+      const packageNameElement = document.getElementById('packageName');
+      const packagePriceElement = document.getElementById('packagePrice');
+      const telegramUsernameInput = document.getElementById('telegramUsername');
+      const proceedToPaymentButton = document.getElementById('proceedToPayment');
+      const modalContent = document.getElementById('modalContent');
+      const loadingIndicator = document.getElementById('loadingIndicator');
+      const errorMessage = document.getElementById('errorMessage');
+      
+      // Package details mapping
+      const packageDetails = {
+        'new-xsid': { name: 'New XSID setup', price: '$5.00' },
+        'xs-credits-50k': { name: '50,000 XS Credits', price: '$50.00' },
+        'xs-credits-100k': { name: '100,000 XS Credits', price: '$100.00' },
+        'xs-credits-200k': { name: '200,000 XS Credits', price: '$200.00' },
+        'xs-credits-1m': { name: '1,000,000 XS Credits', price: '$1,000.00' }
+      };
+      
+      let selectedPackageId = null;
+      
+      // Add click event listeners to all payment buttons
+      paymentButtons.forEach(button => {
+        button.addEventListener('click', function() {
+          selectedPackageId = this.getAttribute('data-package-id');
+          
+          // Update modal with package details
+          const details = packageDetails[selectedPackageId];
+          packageNameElement.textContent = details.name;
+          packagePriceElement.textContent = details.price;
+          
+          // Show the modal
+          paymentModal.classList.remove('hidden');
+          
+          // Reset form
+          telegramUsernameInput.value = '';
+          errorMessage.classList.add('hidden');
+          modalContent.classList.remove('hidden');
+          loadingIndicator.classList.add('hidden');
+        });
+      });
+      
+      // Close modal when clicking the close button
+      closeModal.addEventListener('click', function() {
+        paymentModal.classList.add('hidden');
+      });
+      
+      // Close modal when clicking outside the modal content
+      paymentModal.addEventListener('click', function(event) {
+        if (event.target === paymentModal) {
+          paymentModal.classList.add('hidden');
+        }
+      });
+      
+      // Handle payment process
+      proceedToPaymentButton.addEventListener('click', function() {
+        const username = telegramUsernameInput.value.trim();
+        
+        // Validate Telegram username
+        if (!username || !isValidTelegramUsername(username)) {
+          showError('Please enter a valid Telegram username (e.g., @username)');
+          return;
+        }
+        
+        // Show loading indicator
+        modalContent.classList.add('hidden');
+        loadingIndicator.classList.remove('hidden');
+        
+        // Create payment request
+        createPayment(selectedPackageId, username)
+          .then(response => {
+            if (response.success && response.data && response.data.invoice_url) {
+              // Redirect to NOWPayments invoice page
+              window.location.href = response.data.invoice_url;
+            } else {
+              showError('Failed to create payment. Please try again.');
+              modalContent.classList.remove('hidden');
+              loadingIndicator.classList.add('hidden');
+            }
+          })
+          .catch(error => {
+            console.error('Payment error:', error);
+            showError('An error occurred. Please try again later.');
+            modalContent.classList.remove('hidden');
+            loadingIndicator.classList.add('hidden');
+          });
+      });
+      
+      // Create payment function
+      async function createPayment(packageId, telegramUsername) {
+        try {
+          const response = await fetch('/api/payments/create', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+              packageId,
+              telegramUsername
+            })
+          });
+          
+          return await response.json();
+        } catch (error) {
+          console.error('Error creating payment:', error);
+          throw error;
+        }
+      }
+      
+      // Show error message
+      function showError(message) {
+        errorMessage.textContent = message;
+        errorMessage.classList.remove('hidden');
+      }
+      
+      // Telegram username validation
+      function isValidTelegramUsername(username) {
+        // Telegram usernames must start with @ and contain 5-32 characters
+        // They can only contain Latin letters, numbers, and underscores
+        const usernameRegex = /^@[a-zA-Z0-9_]{4,31}$/;
+        return usernameRegex.test(username);
+      }
+    });
   </script>
 </body>
 

@@ -1,0 +1,21 @@
+<!-- Chat Button (Replaces Search Bar) -->
+<div class="hidden lg:flex items-center px-6 py-2.5 rounded border border-white bg-transparent">
+  <button id="open-chat" class="flex items-center space-x-2 cursor-pointer">
+    <span class="text-white text-sm">Chat with us</span>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20px" class="fill-gray-400">
+      <path d="M12 3C6.486 3 2 7.03 2 12c0 1.857.634 3.642 1.793 5.177L2.07 21.299A1 1 0 0 0 3 22h9.515A9.974 9.974 0 0 0 22 12c0-4.97-4.486-9-10-9zm0 16H4.839l1.32-2.208A7.949 7.949 0 0 1 4 12c0-3.869 3.582-7 8-7s8 3.131 8 7-3.582 7-8 7z"></path>
+    </svg>
+  </button>
+</div>
+
+<!-- Live Chat Provider Script (Example: Tawk.to) -->
+<script async src="https://embed.tawk.to/YOUR_TAWK_ID/default"></script>
+
+<!-- Optional: Open Chat Programmatically -->
+<script>
+  document.getElementById("open-chat").addEventListener("click", function () {
+    if (window.Tawk_API) {
+      window.Tawk_API.maximize();
+    }
+  });
+</script>

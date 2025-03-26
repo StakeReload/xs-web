@@ -7,7 +7,7 @@ const dotenv = require('dotenv');
 dotenv.config();
 
 // Import routes
-const paymentRoutes = require('./routes/payment');
+const paymentRoutes = require('../routes/payment');
 
 // Initialize express app
 const app = express();

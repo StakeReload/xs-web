@@ -57,6 +57,7 @@ const createPayment = async (req, res) => {
       order_description: `${description} - Telegram: ${telegramUsername}`,
       ipn_callback_url: `${req.protocol}://${req.get('host')}/api/payments/ipn-callback`,
       success_url: `${req.protocol}://${req.get('host')}/payment-success.html`,
+      error_url: `${req.protocol}://${req.get('host')}/payment-error-handler.html`,
       cancel_url: `${req.protocol}://${req.get('host')}/payment-cancel.html`
       // Removed payer_telegram parameter as it's not supported by the API
     });

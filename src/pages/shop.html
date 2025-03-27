@@ -277,21 +277,24 @@
   </div>
 
   <script>
+  document.addEventListener('DOMContentLoaded', function () {
     var toggleOpen = document.getElementById('toggleOpen');
     var toggleClose = document.getElementById('toggleClose');
     var collapseMenu = document.getElementById('collapseMenu');
-
-    function handleClick() {
-      if (collapseMenu.style.display === 'block') {
-        collapseMenu.style.display = 'none';
-      } else {
-        collapseMenu.style.display = 'block';
-      }
+  
+    if (!toggleOpen || !toggleClose || !collapseMenu) {
+      console.error('❌ One or more elements not found in the DOM');
+      return;
     }
-
+  
+    function handleClick() {
+      collapseMenu.style.display = (collapseMenu.style.display === 'block') ? 'none' : 'block';
+    }
+  
     toggleOpen.addEventListener('click', handleClick);
     toggleClose.addEventListener('click', handleClick);
-  </script>
+  });
+</script>
 
   <!-- Payment Modal -->
   <div id="paymentModal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 hidden">

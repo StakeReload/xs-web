@@ -193,6 +193,7 @@ Follow us on social media for the latest updates:
 - GitHub 2: [StakeReload](https://github.com/stakereload)
 - Discord: [ReloadedXS](https://discord.gg/KsFPXT5QDW)
 - Telegram: [StakeReloadXS](https://t.me/StakeReloadXS)
+- LinkedIn: [StakeReloadXS](https://www.linkedin.com/company/stakereloadxs/)
 
 ---
 @StakeReloadXS @StakeReload

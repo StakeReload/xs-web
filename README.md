@@ -1,6 +1,6 @@
-# StakeReloadXS
+# StakeReload
 
-StakeReloadXS is a subscription-based web application that allows users to claim casino reloads and social drops quickly and easily with a pay-as-you-go model.
+StakeReload is a subscription-based web application that allows users to claim casino reloads and social drops quickly and easily with a pay-as-you-go model.
 
 
 
@@ -15,9 +15,9 @@ StakeReloadXS is a subscription-based web application that allows users to claim
 
 ## Getting Started
 
-# StakeReloadXS Payment Backend
+# StakeReload Payment Backend
 
-This is the payment processing backend for StakeReloadXS website. It handles cryptocurrency payments via NOWPayments and sends notifications to Telegram when payments are received.
+This is the payment processing backend for StakeReload website. It handles cryptocurrency payments via NOWPayments and sends notifications to Telegram when payments are received.
 
 ## Features
 
@@ -130,19 +130,19 @@ npm start
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/StakeReloadXS/StakeReloadXScom
+    git clone https://github.com/StakeReload/xs-web
     ```
 
 2. Navigate to the project directory:
     ```bash
-    cd stakereloadxs
+    cd stakereload
     ```
 
 3. Open [index.html](http://_vscodecontentref_/1) in your web browser to view the site.
 
 ## Usage
 
-1. Visit [StakeReloadXS](https://stakereloadxs.com).
+1. Visit [StakeReload](https://stakereload.com).
 2. Sign up for an account.
 3. Choose a subscription plan that suits your needs.
 4. Start claiming your casino reloads and social drops effortlessly.
@@ -189,9 +189,13 @@ For any inquiries or support, please contact us at [support@stakereloadxs.com](m
 Follow us on social media for the latest updates:
 
 - Twitter: [@reloadedxs](https://twitter.com/reloadedxs)
-- GitHub: [StakeReloadXS](https://github.com/stakereloadxs/stakereloadxs)
+- GitHub 1: [StakeReloadXS](https://github.com/stakereloadxs)
+- GitHub 2: [StakeReload](https://github.com/stakereload)
+- Discord: [ReloadedXS](https://discord.gg/KsFPXT5QDW)
+- Telegram: [StakeReloadXS](https://t.me/StakeReloadXS)
 
 ---
+@StakeReloadXS @StakeReload
 
-© 2025 StakeReloadXS™. All Rights Reserved.
-# xs-web
+© 2025 StakeReload™. All Rights Reserved.
+# StakeReload.com xs-web

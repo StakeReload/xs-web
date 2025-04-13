@@ -1,42 +1,5 @@
 {
-    // General settings
-    "editor.tabSize": 2,
-    "editor.defaultFontSize": 16,
-    "editor.fontLanguages": ["es"],
-
-    // GitHub Actions settings
-    "github-actions.workflows.pinned.workflows": [
-        "dynamic/pages/pages-build-deployment"
-    ],
-
-    // Code format settings
-    "code-runner.formatOnSave": true,
-    "code-runner.insertSpaceAfterSemicolon": true,
-
-    "intellisense": {
-    "enabled": true,
-    "folder": "intellisense"
-},
-
-    // Code navigation settings
-    "explorer.enabled": true,
-    "explorer.viewType": "document",
-
-    // Debugging settings
-    "debug.autoAttach": true,
-
-    // Testing settings
-    "test.currentTestRunId": "my-test-run",
-
-    // Code sniffer settings
-    "codeSnippet.sniffers.html.enabled": false,
-    "codeSnippet.sniffers.js.enabled": true,
-
-    // Color scheme settings
-    "color.scheme": "One Dark",
-
-    // Theming settings
-    "workbench.colors.background": "#f1f1f1",
-    "workbench.colors.text": "#33333",
-    "workbench.colors.border": "#444444"
+    "vercelVSCode.accessToken": "YpLpmOo04d0evPxUZZFgmxeN",
+    "continue.remoteConfigServerUrl": "http://localhost:3000/",
+    "continue.userToken": "sk-48b867249bbf48588ec834ba8956a582"
 }

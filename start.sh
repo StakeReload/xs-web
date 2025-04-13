@@ -17,7 +17,7 @@ echo "npm version: $(npm -v)"
 echo "Git version: $(git --version)"
 
 # Clone the repository
-REPO_URL="https://github.com/StakeReload/xs-web"
+REPO_URL="https://github.com/jlucus/StakeReloadXS.com.git"
 CLONE_DIR="xs-web"
 
 echo "Cloning repository from $REPO_URL..."

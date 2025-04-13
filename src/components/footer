@@ -1,0 +1,21 @@
+<footer class="Footer">
+  <div class="Socials">
+    <a href="https://github.com/stake-com" target="_blank">GitHub</a>
+    <a href="https://twitter.com/stake_com" target="_blank">Twitter</a>
+    <a href="https://discord.gg/stake" target="_blank">Discord</a>
+    <a href="https://t.me/stake_com" target="_blank">Telegram</a>
+    <a href="mailto:info@stake.com" target="_blank">Email</a>
+  </div>
+  <div class="Team">
+    <h5>Meet the Team</h5>
+    <p>Learn more about our team and their roles within the company.</p>
+  </div>
+  <div class="Legal">
+    <h5>Important Legal Information</h5>
+    <p>Read our Privacy Policy, Terms of Service, Return Policy, and FAQ for more information.</p>
+  </div>
+  <div class="Partners">
+    <h5>Our Partnerships</h5>
+    <p>Learn more about our partnerships with other companies in the industry.</p>
+  </div>
+</footer>
